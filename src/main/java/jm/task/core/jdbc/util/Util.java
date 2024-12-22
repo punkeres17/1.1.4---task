@@ -41,6 +41,7 @@ public final class Util {
                 properties.put(Environment.DIALECT, DIALECT);
                 properties.put(Environment.SHOW_SQL, SHOW_SQL);
                 properties.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, CURRENT_SESSION_CONTEXT_CLASS);
+
                 properties.put(Environment.HBM2DDL_AUTO, HBM2DDL_AUTO);
 
                 configuration.setProperties(properties);
@@ -56,7 +57,6 @@ public final class Util {
             }
         }
         return sessionFactory;
-
     }
 
     public static void closeSessionFactory() {
